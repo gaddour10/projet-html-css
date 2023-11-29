@@ -1,0 +1,113 @@
+@font-face {
+    font-family: "IntroRust";
+    src: url('../web fonts/introrustg_base2line_macroman/introrustg-base2line-webfont.woff') format('woff');
+}
+h1{
+    font-family: 'introRust';
+}
+#header_title{
+    font-family: 'IntroRust';
+    color: white;
+}
+#header_title::first-letter{
+    color: #FFFF00;
+}
+body{
+    margin: 0;
+}
+header{
+    font-family: 'IntroRust';
+    font-size: 14px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(171, 151, 142, 0.5);
+    z-index: 1;
+}
+li{
+    list-style-type: none;
+    padding: 15px;
+}
+ul{
+    display: flex;
+   
+}
+nav{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: #FFFF00;
+    border-bottom: 1px solid rgba(255, 255, 0, 0.5);
+   
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'IntroRust';
+    height: 100vh;
+    color: white;
+    background-image: url(../img/sign_up.jpg);
+    background-size: cover;
+   
+}
+form{
+    
+    padding: 20px;
+    background-color: rgba(171, 151, 142, 0.5);
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10%;
+}
+h2{
+    position: absolute;
+    top: 10%;
+    color: white;
+    font-size: 20px;
+    font-family: 'IntroRust';
+    padding-left: 20px;
+    
+    
+}
+h2::first-letter{
+    color: #FFFF00;
+}
+h2:hover{
+    color: #FFFF00;
+    
+    
+}
+@media (max-width:768px) {
+    header{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        font-size: 25px;
+
+    }
+    ul{
+        display: flex;
+        
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    h2{
+        position: absolute;
+        top: 80%;
+    }
+    
+}

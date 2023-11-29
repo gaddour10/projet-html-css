@@ -1,0 +1,232 @@
+@font-face {
+    font-family: "IntroRust";
+    src: url('../Web Fonts/introrustg_base2line_macroman/introrustg-base2line-webfont.woff') format('woff');
+}
+h1{
+    font-family: 'introRust';
+}
+#header_title{
+    font-family: 'IntroRust';
+    color: white;
+}
+#header_title::first-letter{
+    color: #FFFF00;
+}
+body{
+    margin: 0;
+}
+header{
+    font-family: 'IntroRust';
+    font-size: 14px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(171, 151, 142, 0.5);
+    z-index: 1;
+}
+li{
+    list-style-type: none;
+    padding: 15px;
+}
+ul{
+    display: flex;
+   
+}
+nav{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: #FFFF00;
+    border-bottom: 1px solid rgba(255, 255, 0, 0.5);
+   
+}
+section{
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/fitness.jpg) ;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+p{
+    padding: 110px;
+    color: white;
+    font-family: 'IntroRust';
+    font-size: 40px;
+}
+section p::first-letter{
+    color: #FFFF00;
+}
+img{
+    position: absolute;
+    right:0;
+    float: right;
+    border-top-left-radius:10% ;
+    top: 950px;
+    
+}
+#main_title{
+    font-size: 70px;
+    padding: 10px;
+    text-align: center;
+
+}
+i{
+    padding: 10px;
+    letter-spacing: 1px;
+}
+article{
+    height: 1000px;
+    width: 955px;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    padding: 20px;
+    
+}
+footer{
+    font-family: 'introRust';
+    background-color: rgba(171, 151, 142, 0.5);
+    position: absolute;
+    bottom: -1205px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 63%;
+    
+}
+footer h2{
+    width: 70%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+
+}
+input{
+    width: 320px;
+    height: 40px;
+    background-color: black;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+}
+#under_container{
+    display: flex;
+    flex-direction: column;
+    padding-left: 35px;
+}
+@media (max-width:1200px){
+    img{
+        display: none;
+    }
+    section{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        background-image: none;
+        height: 50vh;
+    }
+    p{
+        
+        color: black;
+        padding: 0;
+        padding-left: 15%;
+        
+    }
+    article{
+        height: 30%;
+    }
+    footer{
+        position: absolute;
+        bottom: -600px;
+        width: 100%;
+    }
+   
+}
+@media (max-width:768px) {
+    header{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        font-size: 25px;
+
+    }
+    ul{
+        display: flex;
+        
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    section{
+        position: absolute;
+        top: 70%;
+    }
+    article{
+        position: absolute;
+        height: auto;
+        width: auto;
+        top: 120%;
+
+    }
+    footer{
+        
+        position: absolute;
+        top: 230%;
+        width: auto;
+        height: auto;
+
+    }
+    form{
+        font-size: 15px;
+    }
+    #container{
+      
+        
+        display: flex;
+        flex-direction: column;
+    }
+    #main_title{
+        font-size: 3rem;
+    }
+    footer h2{
+        display: none;
+    }
+    #footer_title{
+        width: auto;
+        display: flex;
+        align-self: flex-start;
+        padding-left: 8%;
+       
+    }
+    input{
+        padding-left: 8%;
+    }
+    
+    
+    
+}
+
+

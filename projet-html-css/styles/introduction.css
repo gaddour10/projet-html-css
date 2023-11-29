@@ -1,0 +1,144 @@
+@font-face {
+    font-family: "IntroRust";
+    src: url('../Web Fonts/introrustg_base2line_macroman/introrustg-base2line-webfont.woff') format('woff');
+}
+h1{
+    font-family: 'introRust';
+    
+}
+
+#header_title{
+    font-family: 'IntroRust';
+    color: white;
+}
+#header_title::first-letter{
+    color: #FFFF00;
+}
+body{
+    margin: 0;
+}
+header{
+    font-family: 'IntroRust';
+    font-size: 14px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(171, 151, 142, 0.5);
+    z-index: 1;
+}
+li{
+    list-style-type: none;
+    padding: 15px;
+}
+ul{
+    display: flex;
+   
+}
+nav{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: #FFFF00;
+    border-bottom: 1px solid rgba(255, 255, 0, 0.5);
+   
+}
+#center_title{
+    margin: 0;
+    font-family: 'IntroRust';
+    color: white;
+    font-size: 50px;
+    
+}
+#center_title::first-letter{
+    color: #FFFF00;
+}
+
+#main_title,p{
+    width: 500px;
+    display: flex;
+    text-align: center;
+    
+    
+    
+}
+main{
+    color: white;
+    background-image: url(../img/introduction.jpg);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+p{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+h2{
+    position: absolute;
+    top: 10%;
+    color: white;
+    font-size: 20px;
+    font-family: 'IntroRust';
+    padding-left: 20px;
+    
+    
+}
+h2::first-letter{
+    color: #FFFF00;
+}
+h2:hover{
+    color: #FFFF00;
+    
+    
+}
+@media (max-width:768px) {
+    header{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        font-size: 25px;
+
+    }
+    ul{
+        display: flex;
+        
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    h2{
+        position: absolute;
+        top: 70%;
+    }
+    main p{
+        text-align: center;
+        width: 300px;
+        margin-left: -30px;
+
+        
+    }
+    #center_title{
+        font-size: 30px;
+        width: 300px;
+
+    }
+    #header_title{
+        font-size: 30px;
+    }
+}
+
